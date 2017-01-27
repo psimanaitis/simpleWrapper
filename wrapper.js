@@ -37,8 +37,8 @@ var wrapper = (function(){
         for (var i = 0; i < words.length; i++) {
             var word = words[i];
 
-            if (i + 1 < words.length) {//dont do this to last item in array
-                totalLineSum = word.length + totalLineSum % lineLength + words[i + 1].length + 1;
+            if (!lastIndex(i, words)) {
+                totalLineSum = word.length + (totalLineSum % lineLength) + words[i + 1].length + 1;
                 if (totalLineSum >= lineLength) {
                     words[i] = word + '\n';
                     totalLineSum = 0;
@@ -49,5 +49,9 @@ var wrapper = (function(){
         }
 
         return words;
+    }
+
+    function lastIndex(indexNumber, arrayToCheck){
+        return indexNumber + 1 === arrayToCheck.length;
     }
 })();
