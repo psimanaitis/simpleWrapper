@@ -1,0 +1,25 @@
+{
+  "name": "telesoftui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "word-wrapper.js",
+  "scripts": {
+    "test": "node ./node_modules/karma/bin/karma start"
+  },
+  "author": "Povilas Simanaitis",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-opera-launcher": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-requirejs": "^1.1.0",
+    "karma-safari-launcher": "^1.0.0",
+    "requirejs": "^2.3.2"
+  }
+}
